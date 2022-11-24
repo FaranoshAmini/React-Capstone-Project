@@ -24,7 +24,7 @@ const CoinCard = ({ coin }) => {
         </span>
       </p>
       <div className="details">
-        <Link to="/">Details</Link>
+        <Link to={`/details/${coin.id}`}>Details</Link>
       </div>
     </div>
   );
