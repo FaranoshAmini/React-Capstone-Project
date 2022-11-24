@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import CoinCard from '../components/CoinCard';
 import { getAllCoins } from '../redux/coins/coinsReducer';
 
 const Dashboard = () => {
@@ -15,8 +16,11 @@ const Dashboard = () => {
   console.log(coinsData);
 
   return (
-    <section>
-      <h2>Dashboard</h2>
+    <section className="coins-container">
+      {
+        coinsData
+            && coinsData.map((coin) => <CoinCard key={coin.id} coin={coin} />)
+      }
     </section>
   );
 };
