@@ -8,3 +8,13 @@ export const getAllCoins = createAsyncThunk(FETCH_COIN_DATA, async () => {
   const coins = await fetchCoins();
   return coins;
 });
+
+const coinReducer = createSlice({
+  name: 'coins',
+  intialState,
+  extraReducers: (builder) => {
+    builder.addCase(getAllCoins.fulfilled, (state, action) => action.payload);
+  },
+});
+
+export default coinReducer.reducer;
