@@ -2,9 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const CoinCard = ({ coin }) => {
-  // eslint-disable-next-line no-unused-vars
-  const title = 'Test';
+const CoinCard = (props) => {
+  const { coin } = props;
 
   return (
     <div className="coin-card">
@@ -31,13 +30,7 @@ const CoinCard = ({ coin }) => {
 };
 
 CoinCard.propTypes = {
-  coin: PropTypes.shape({
-    id: PropTypes.string,
-    name: PropTypes.string,
-    image: PropTypes.string,
-    rank: PropTypes.number,
-    price: PropTypes.number,
-  }).isRequired,
-};
+  coin: PropTypes.array,
+}.isRequired;
 
 export default CoinCard;
