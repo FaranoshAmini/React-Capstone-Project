@@ -12,6 +12,8 @@ const Dashboard = () => {
     }
   }, []);
 
+  console.log(coinsData);
+
   return (
     <section>
       <h2>Dashboard</h2>
