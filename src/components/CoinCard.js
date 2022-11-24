@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const CoinCard = ({ coin }) => {
+  // eslint-disable-next-line no-unused-vars
   const title = 'Test';
 
   return (
