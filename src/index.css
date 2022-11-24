@@ -115,3 +115,37 @@ div.details a:hover {
   border: 1px solid #00b4d8;
   background-color: #003566;
 }
+
+/* details */
+section.coin-detail {
+  margin: 2rem 0;
+}
+
+div.detail-img {
+  display: flex;
+  justify-content: center;
+}
+
+div.detail-img img {
+  width: 10rem;
+}
+
+h3.detail-name {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+th,
+td {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
