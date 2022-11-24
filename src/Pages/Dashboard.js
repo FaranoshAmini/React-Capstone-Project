@@ -11,6 +11,7 @@ const Dashboard = () => {
     if (!coinsData.length) {
       dispatch(getFilteredData());
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
