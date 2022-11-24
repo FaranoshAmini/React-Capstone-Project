@@ -130,8 +130,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Display all data for coins]**
-- [ ] **[Display data for each coin]**
+- [ ] **[Display more information about all coins]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
