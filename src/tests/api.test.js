@@ -1,4 +1,5 @@
 import axios from 'axios';
+// eslint-disable-next-line import/named
 import fetchCoins, { url } from '../redux/Api/endpoint';
 
 jest.mock('axios');
