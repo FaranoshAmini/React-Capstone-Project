@@ -1,65 +1,166 @@
-# React and Redux
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
 
-## Set-up GitHub Actions
+# 📗 Table of Contents
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+# 📖 [CryptoCoins] <a name="about-project"></a>
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+**cryptoCoins** CryptoCoins is a web app that displays information about all leading cryptocurrencies in the world.
 
-Please do the following **steps in this order**:
+## 📷 [Screenshots]
 
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
+<div>
+  <img src="" />
+  <img src="" />
+</div>
 
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
+## 🛠 Built With <a name="built-with"></a>
 
-Click on the `Details` link to see the full output and the errors that need to be fixed:
+### Tech Stack <a name="tech-stack"></a>
 
-![gh actions failing checks](../assets/images/gh-actions-html-css-failing-checks.png)
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://axios-http.com/docs/intro">Axios</a></li>
+  </ul>
+</details>
 
-## Set-up linters in your local env
+### Key Features <a name="key-features"></a>
 
-### ESLint
+- **[Homepage - Dispalys all data for coins]**
+- **[Details - Displays data for each coin]**
 
-1. Run 
-    ```
-    npm install --save-dev eslint@7.x eslint-config-airbnb@18.x eslint-plugin-import@2.x eslint-plugin-jsx-a11y@6.x eslint-plugin-react@7.x eslint-plugin-react-hooks@4.x @babel/eslint-parser@7.x @babel/core@7.x  @babel/plugin-syntax-jsx@7.x  @babel/preset-react@7.x @babel/preset-react@7.x
-    ```
-    *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
-2. Copy [.eslintrc.json](./.eslintrc.json) and [.babelrc](./.babelrc) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx eslint .` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Stylelint
+## 🚀 Live Demo <a name="live-demo"></a>
 
-1. Run
+- [Live Demo Link](https://cryptocoins-3t28k5br2-faranoshamini.vercel.app/)
 
-   ```
-   npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-   ```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+## 🎥 Video Presentation
+- [Video]()
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Test/Deployment Actions
+## 💻 Getting Started <a name="getting-started"></a>
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+To get a local copy up and running, follow these steps.
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+### Prerequisites
+
+In order to run this project you need:
+
+- Latest version of [Node](https://nodejs.org/en/) installed on the computer.
+- [Git](https://git-scm.com/downloads) installed on the computer.
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd my-project
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm test
+```
+
+### Deployment
+
+You can deploy this project using:
+
+- [Vercel](https://vercel.com/docs)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Faranosh Amini**
+
+- GitHub: [@githubhandle](https://github.com/FaranoshAmini)
+- Twitter: [@twitterhandle](https://twitter.com/Faranosh_Amini)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/faranosh-amini-9b925b23a/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Display all data for coins]**
+- [ ] **[Display data for each coin]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, give it a ⭐
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank
+
+- [Microverse](https://www.microverse.org/)
+- [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
+- [Coin Geko](https://www.coingecko.com/en/all-cryptocurrencies)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>

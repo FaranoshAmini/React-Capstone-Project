@@ -13,6 +13,7 @@ const Details = () => {
     if (!coinsData.length) {
       dispatch(getAllData());
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <section className="coin-detail">
