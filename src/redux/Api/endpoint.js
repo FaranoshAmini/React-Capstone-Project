@@ -5,14 +5,7 @@ const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&orde
 const fetchCoins = async () => {
   const res = await axios.get(url);
   const { data } = res;
-  const coins = data.map((coin) => ({
-    id: coin.id,
-    name: coin.name,
-    image: coin.image,
-    rank: coin.market_cap_rank,
-    price: coin.current_price,
-  }));
-  return coins;
+  return data;
 };
 
 export default fetchCoins;
