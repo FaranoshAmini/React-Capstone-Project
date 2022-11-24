@@ -9,6 +9,47 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+nav {
+  padding: 1rem;
+  box-shadow: 1px -2px 10px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.back-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+a.btn-link {
+  color: #fff;
+  font-size: 2rem;
+  background-color: transparent;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+  align-content: center;
+  border-radius: 50%;
+  transition: 0.5s all ease-out;
+}
+
+a.btn-link:hover {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+div.logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+div.logo span {
+  color: orange;
+}
+
 section.coins-container {
   display: flex;
   justify-content: center;
