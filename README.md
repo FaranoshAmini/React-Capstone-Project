@@ -28,11 +28,9 @@
 **cryptoCoins** CryptoCoins is a web app that displays information about all leading cryptocurrencies in the world.
 
 ## 📷 [Screenshots]
+<p align="center"><img src="https://user-images.githubusercontent.com/101713819/203948159-a0180d87-2ecf-4e3e-bab5-a2a5b835203e.png" width="350px"></p>
 
-<div>
-  <img src="" />
-  <img src="" />
-</div>
+<p align="center"><img src="https://user-images.githubusercontent.com/101713819/203948191-46e42a30-95de-4d58-b777-cc5b6b7ce6b2.png"  width="350px"></p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
